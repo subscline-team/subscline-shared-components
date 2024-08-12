@@ -29,7 +29,7 @@
   <div class="dummy" aria-hidden="true">
     {text ? text : placeholder}{ZERO_WIDTH_SPACE}
   </div>
-  <textarea class="text-area" bind:value={text} {name} {placeholder} {disabled} on:focus={onFocus} />
+  <textarea class="text-area" bind:value={text} {name} {placeholder} {disabled} on:focus={onFocus} on:input />
 </div>
 
 {#if errorMessage}
