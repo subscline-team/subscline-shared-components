@@ -77,7 +77,7 @@
 {/if}
 
 <Modal class="p-4" bind:opened={isDatePickerOpened}>
-  <DatePicker bind:selectedDate {disable} {onSelect} />
+  <DatePicker bind:selectedDate selectedMonth={selectedDate} {disable} {onSelect} />
 </Modal>
 
 <CommonCss />
