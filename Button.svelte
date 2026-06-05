@@ -30,7 +30,8 @@
     }
 
     if (href !== undefined) {
-      if (openNewTab) return window.open(href, '_blank')
+      // ⌘(Mac) / Ctrl(Windows) を押しながらのクリックは、ネイティブの <a> リンクと同様に新規タブで開く
+      if (openNewTab || event.metaKey || event.ctrlKey) return window.open(href, '_blank')
       if (isExternalUrl(href)) return (location.href = href)
       $goto(href)
     }
