@@ -108,7 +108,7 @@
           {/each}
         </div>
         <div>
-          {#each { length: values.length - 2 } as _, i}
+          {#each { length: Math.max(values.length - 2, 0) } as _, i}
             <div class="following-count">+{i + 1}</div>
           {/each}
         </div>
