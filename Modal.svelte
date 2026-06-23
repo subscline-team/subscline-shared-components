@@ -25,8 +25,24 @@
     opened ? close() : open()
   }
 
-  function onClickBackdrop() {
-    if (!persistent) {
+  // バックドロップ上で mousedown が始まったかを記録するフラグ。
+  // click イベントは mousedown と mouseup の「共通祖先」で発火するため、
+  // フレーム内で押下 → バックドロップ上で離す（あるいはその逆のドラッグ）でも
+  // click はバックドロップ (.root) で発火してしまい、誤って閉じてしまう。
+  // それを防ぐため、押下と離上の両方がバックドロップ自身だったときだけ閉じる。
+  let backdropMouseDown = false
+
+  function onBackdropMouseDown(event: MouseEvent) {
+    // mousedown がバックドロップ (.root 自身) 上で始まったかだけを記録する。
+    backdropMouseDown = event.target === event.currentTarget
+  }
+
+  function onBackdropMouseUp(event: MouseEvent) {
+    // mousedown も mouseup もバックドロップ自身のときだけ閉じる。
+    // (内側 mousedown → 外側 mouseup / 外側 mousedown → 内側 mouseup はいずれも閉じない)
+    const shouldClose = backdropMouseDown && event.target === event.currentTarget
+    backdropMouseDown = false
+    if (shouldClose && !persistent) {
       close()
     }
   }
@@ -35,7 +51,13 @@
 <slot name="launcher" {open} {close} {toggle} />
 {#if opened}
   <Portal>
-    <div class="root" transition:fade={{ duration: 150 }} on:click|self={onClickBackdrop} {...$$restProps}>
+    <div
+      class="root"
+      transition:fade={{ duration: 150 }}
+      on:mousedown={onBackdropMouseDown}
+      on:mouseup={onBackdropMouseUp}
+      {...$$restProps}
+    >
       <slot name="frame" {open} {close} {toggle}>
         <div class={`frame ${klass}`} {style}>
           <div class="flex items-center justify-between py-1.5" class:hidden={!$$slots.title && !showCloseButton}>
