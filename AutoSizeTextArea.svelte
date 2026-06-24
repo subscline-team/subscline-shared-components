@@ -82,7 +82,7 @@
     resize: none;
 
     .disabled & {
-      background-color: hsla(0, 0%, 0%, 4%);
+      background-color: var(--surface_bg_disabled);
     }
   }
 

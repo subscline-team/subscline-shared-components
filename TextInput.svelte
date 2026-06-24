@@ -122,7 +122,8 @@
 
 <style lang="postcss">
   .root {
-    @apply w-full block rounded-md bg-white;
+    @apply w-full block rounded-md;
+    background-color: var(--surface_bg);
     height: var(--one-line-input-height);
     padding: 0 0.7em;
     border: var(--tt_color_light-gray) 1px solid;
@@ -133,7 +134,7 @@
     }
 
     &.disabled {
-      background-color: hsla(0, 0%, 0%, 4%);
+      background-color: var(--surface_bg_disabled);
     }
   }
 

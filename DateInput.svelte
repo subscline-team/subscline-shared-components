@@ -84,7 +84,8 @@
 
 <style lang="postcss">
   .root {
-    @apply w-full rounded-md grid items-center bg-white text-start;
+    @apply w-full rounded-md grid items-center text-start;
+    background-color: var(--surface_bg);
     grid-template-columns: 1fr auto;
     min-height: var(--one-line-input-height);
     padding: 0.4em 0.7em;
@@ -93,7 +94,7 @@
 
     &:disabled {
       @apply cursor-default;
-      background-color: hsla(0, 0%, 0%, 4%);
+      background-color: var(--surface_bg_disabled);
     }
   }
 

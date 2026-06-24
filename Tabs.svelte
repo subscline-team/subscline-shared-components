@@ -58,13 +58,14 @@
 
   .tab {
     @apply px-[30px] h-10 rounded-t-lg flex items-center text-sm cursor-pointer;
-    border: 1px solid hsl(0, 0%, 90%);
+    border: 1px solid var(--line_color_gray);
     border-bottom: none;
     background-color: var(--bg_color_sub2);
     color: var(--tt_color_gray);
 
     &.selected {
-      @apply bg-white font-bold border-none;
+      @apply font-bold border-none;
+      background-color: var(--surface_bg);
       color: var(--tt_color_black);
     }
   }
@@ -75,7 +76,8 @@
   }
 
   .content-area {
-    @apply bg-white pointer-events-auto;
+    @apply pointer-events-auto;
+    background-color: var(--surface_bg);
     border-radius: 0 0.5rem 0.5rem 0.5rem;
   }
 </style>

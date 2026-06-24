@@ -118,7 +118,7 @@
     font-size: 18px;
 
     .day-row & {
-      color: hsl(0 0% 50%);
+      color: var(--tt_color_gray);
 
       &[data-day='0'] {
         color: hsl(5 35% 50%);
@@ -132,17 +132,17 @@
     .date-row & {
       @media (hover: hover) {
         &:hover {
-          background-color: hsl(0 0% 96%);
+          background-color: var(--surface_bg_hover);
         }
       }
 
       &:active {
-        background-color: hsl(0 0% 92%);
+        background-color: var(--surface_bg_active);
       }
 
       &.next-month,
       &.prev-month {
-        color: hsl(0 0% 60%);
+        color: var(--tt_color_light-gray);
       }
 
       &.selected {
@@ -151,7 +151,7 @@
       }
 
       &:disabled {
-        color: hsl(0 0% 85%);
+        color: var(--text_disabled);
       }
     }
   }

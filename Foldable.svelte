@@ -85,7 +85,7 @@
 
 <style lang="postcss">
   .root {
-    background-color: hsl(0 0% 96%);
+    background-color: var(--bg_color_sub2);
     border-radius: 0.5rem;
   }
 

@@ -63,7 +63,7 @@
 
     & :global(.foldable) {
       border-radius: 0;
-      background-color: hsl(0 0% 100%);
+      background-color: var(--surface_bg);
       border: var(--line_color_gray) 1px solid;
 
       &:not(:first-of-type) {
@@ -83,7 +83,7 @@
     gap: 0.5em;
     padding: 1em 0.5em;
 
-    background-color: hsl(0 0% 100%);
+    background-color: var(--surface_bg);
     font-size: 14px;
   }
 </style>

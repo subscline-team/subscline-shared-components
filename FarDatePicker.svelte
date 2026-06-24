@@ -52,7 +52,7 @@
 
   .title {
     text-align: center;
-    color: hsl(0 0% 40%);
+    color: var(--tt_color_gray);
     font-size: 16px;
     margin: 0.7em;
   }

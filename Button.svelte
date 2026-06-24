@@ -107,19 +107,19 @@
 
         @media (hover: hover) {
           &:hover {
-            background-color: hsl(0, 0%, 82%);
+            background-color: var(--neutral_bg_hover);
             transition-duration: 0s;
           }
         }
 
         &:active {
-          background-color: hsl(0, 0%, 78%);
+          background-color: var(--neutral_bg_active);
           transition-duration: 0s;
         }
 
         &.disabled {
-          background-color: hsl(0, 0%, 96%);
-          color: hsl(0, 0%, 75%);
+          background-color: var(--surface_bg_disabled);
+          color: var(--text_disabled);
         }
       }
 
@@ -185,8 +185,8 @@
 
         &.disabled {
           border: none;
-          background-color: hsl(0, 0%, 96%);
-          color: hsl(0, 0%, 75%);
+          background-color: var(--surface_bg_disabled);
+          color: var(--text_disabled);
         }
       }
 
@@ -208,8 +208,8 @@
 
         &.disabled {
           border: none;
-          background-color: hsl(0, 0%, 96%);
-          color: hsl(0, 0%, 75%);
+          background-color: var(--surface_bg_disabled);
+          color: var(--text_disabled);
         }
       }
 
@@ -231,8 +231,8 @@
 
         &.disabled {
           border: none;
-          background-color: hsl(0, 0%, 96%);
-          color: hsl(0, 0%, 75%);
+          background-color: var(--surface_bg_disabled);
+          color: var(--text_disabled);
         }
       }
 
@@ -254,14 +254,14 @@
 
         &.disabled {
           border: none;
-          background-color: hsl(0, 0%, 96%);
-          color: hsl(0, 0%, 75%);
+          background-color: var(--surface_bg_disabled);
+          color: var(--text_disabled);
         }
       }
     }
 
     &[data-variant='outline'] {
-      background-color: white;
+      background-color: var(--surface_bg);
 
       &[data-color='primary'] {
         border: var(--main_color) 1px solid;
@@ -269,7 +269,7 @@
 
         @media (hover: hover) {
           &:hover {
-            background-color: hsl(0, 0%, 97%);
+            background-color: var(--surface_bg_hover);
             transition-duration: 0s;
           }
         }
@@ -281,8 +281,8 @@
 
         &.disabled {
           border: none;
-          background-color: hsl(0, 0%, 96%);
-          color: hsl(0, 0%, 75%);
+          background-color: var(--surface_bg_disabled);
+          color: var(--text_disabled);
         }
       }
 
@@ -292,20 +292,20 @@
 
         @media (hover: hover) {
           &:hover {
-            background-color: hsl(0, 0%, 97%);
+            background-color: var(--surface_bg_hover);
             transition-duration: 0s;
           }
         }
 
         &:active {
-          background-color: hsl(0, 0%, 94%);
+          background-color: var(--surface_bg_active);
           transition-duration: 0s;
         }
 
         &.disabled {
           border: none;
-          background-color: hsl(0, 0%, 96%);
-          color: hsl(0, 0%, 75%);
+          background-color: var(--surface_bg_disabled);
+          color: var(--text_disabled);
         }
       }
 
@@ -315,20 +315,20 @@
 
         @media (hover: hover) {
           &:hover {
-            background-color: hsl(0, 0%, 97%);
+            background-color: var(--surface_bg_hover);
             transition-duration: 0s;
           }
         }
 
         &:active {
-          background-color: hsl(0, 0%, 94%);
+          background-color: var(--surface_bg_active);
           transition-duration: 0s;
         }
 
         &.disabled {
           border: none;
-          background-color: hsl(0, 0%, 96%);
-          color: hsl(0, 0%, 75%);
+          background-color: var(--surface_bg_disabled);
+          color: var(--text_disabled);
         }
       }
 
@@ -338,7 +338,7 @@
 
         @media (hover: hover) {
           &:hover {
-            background-color: hsl(0, 0%, 97%);
+            background-color: var(--surface_bg_hover);
             transition-duration: 0s;
           }
         }
@@ -350,8 +350,8 @@
 
         &.disabled {
           border: none;
-          background-color: hsl(0, 0%, 96%);
-          color: hsl(0, 0%, 75%);
+          background-color: var(--surface_bg_disabled);
+          color: var(--text_disabled);
         }
       }
     }
@@ -373,8 +373,8 @@
         }
 
         &.disabled {
-          background-color: hsl(0, 0%, 96%);
-          color: hsl(0, 0%, 75%);
+          background-color: var(--surface_bg_disabled);
+          color: var(--text_disabled);
         }
       }
 
@@ -394,8 +394,8 @@
         }
 
         &.disabled {
-          background-color: hsl(0, 0%, 96%);
-          color: hsl(0, 0%, 75%);
+          background-color: var(--surface_bg_disabled);
+          color: var(--text_disabled);
         }
       }
 
@@ -415,8 +415,8 @@
         }
 
         &.disabled {
-          background-color: hsl(0, 0%, 96%);
-          color: hsl(0, 0%, 75%);
+          background-color: var(--surface_bg_disabled);
+          color: var(--text_disabled);
         }
       }
 
@@ -436,8 +436,8 @@
         }
 
         &.disabled {
-          background-color: hsl(0, 0%, 96%);
-          color: hsl(0, 0%, 75%);
+          background-color: var(--surface_bg_disabled);
+          color: var(--text_disabled);
         }
       }
     }

@@ -22,14 +22,14 @@
     transform-origin: center;
     transition: all 140ms ease-out;
     transform: rotate(0deg);
-    color: hsl(0 0% 50%);
+    color: var(--tt_color_gray);
 
     &.reversed {
       transform: rotate(-180deg);
     }
 
     &.sorted {
-      color: hsl(0 0% 0%);
+      color: var(--tt_color_black);
     }
   }
 </style>
