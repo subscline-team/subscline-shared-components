@@ -199,7 +199,7 @@
     box-sizing: border-box;
     min-height: var(--one-line-input-height);
 
-    background-color: white;
+    background-color: var(--surface_bg);
     font: inherit;
     cursor: pointer;
 
@@ -208,7 +208,7 @@
     }
 
     &.disabled {
-      background-color: hsla(0, 0%, 0%, 4%);
+      background-color: var(--surface_bg_disabled);
       cursor: initial;
     }
 
@@ -260,7 +260,7 @@
     width: var(--dropdown-width);
     max-height: var(--dropdown-man-height);
     border-radius: 0.4em;
-    background-color: white;
+    background-color: var(--surface_bg);
     box-shadow: 0 3px 14px hsla(0, 0%, 0%, 20%);
 
     overflow: auto;
@@ -282,32 +282,32 @@
     box-sizing: border-box;
     width: 100%;
 
-    background-color: white;
+    background-color: var(--surface_bg);
     font: inherit;
     cursor: pointer;
 
     @media (hover: hover) {
       &:hover {
-        background-color: hsl(0 0% 97%);
+        background-color: var(--surface_bg_hover);
       }
     }
 
     &:active {
-      background-color: hsl(0 0% 94%);
+      background-color: var(--surface_bg_active);
     }
 
     &.selected {
-      background-color: hsl(187, 60%, 95%);
+      background-color: var(--selected_bg);
       color: var(--main_color);
 
       @media (hover: hover) {
         &:hover {
-          background-color: hsl(187, 60%, 93%);
+          background-color: var(--selected_bg_hover);
         }
       }
 
       &:active {
-        background-color: hsl(187, 60%, 91%);
+        background-color: var(--selected_bg_active);
       }
     }
   }

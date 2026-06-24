@@ -173,7 +173,8 @@
   }
 
   .frame {
-    @apply fixed grid bg-white rounded-lg;
+    @apply fixed grid rounded-lg;
+    background-color: var(--surface_bg);
     transform: var(--transform);
     box-shadow: 0 3px 14px hsla(0, 0%, 0%, 20%);
 

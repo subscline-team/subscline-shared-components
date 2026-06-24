@@ -67,7 +67,7 @@
     &.disabled {
       cursor: default;
 
-      color: hsl(0 0% 70%);
+      color: var(--text_disabled);
     }
   }
 
@@ -83,8 +83,8 @@
     height: var(--size);
     border-radius: 0.25em;
     margin: 0;
-    border: 1px solid hsl(0 0% 84%);
-    background-color: white;
+    border: 1px solid var(--line_color_gray);
+    background-color: var(--surface_bg);
 
     cursor: pointer;
 
@@ -95,7 +95,7 @@
       border: none;
 
       .disabled & {
-        background-color: hsl(0 0% 90%);
+        background-color: var(--bg_color_sub1);
       }
     }
 

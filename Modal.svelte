@@ -104,7 +104,8 @@
   }
 
   .frame {
-    @apply grid bg-white;
+    @apply grid;
+    background-color: var(--surface_bg);
     grid-template-rows: auto auto minmax(0, 1fr) auto auto;
     max-height: 90vh;
     max-width: 90vw;

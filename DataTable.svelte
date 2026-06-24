@@ -362,12 +362,12 @@
 
     @media (hover: hover) {
       .row-clickable .body-row:hover & {
-        background-color: hsl(0 0% 97%);
+        background-color: var(--surface_bg_hover);
       }
     }
 
     .row-clickable .body-row:active & {
-      background-color: hsl(0 0% 95%);
+      background-color: var(--surface_bg_active);
     }
   }
 

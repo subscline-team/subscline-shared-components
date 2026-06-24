@@ -176,7 +176,7 @@
     box-sizing: border-box;
     min-height: var(--one-line-input-height);
 
-    background-color: white;
+    background-color: var(--surface_bg);
     font: inherit;
     cursor: pointer;
 
@@ -185,7 +185,7 @@
     }
 
     &.disabled {
-      background-color: hsla(0, 0%, 0%, 4%);
+      background-color: var(--surface_bg_disabled);
       cursor: initial;
     }
 
@@ -212,8 +212,8 @@
   .following-count {
     border-radius: 99999px;
     padding: 0.2em 0.5em;
-    background-color: hsl(0 0% 94%);
-    color: hsl(0 0 30%);
+    background-color: var(--surface_bg_active);
+    color: var(--tt_color_black);
     font-size: 80%;
   }
 
@@ -250,7 +250,7 @@
     width: var(--dropdown-width);
     max-height: var(--dropdown-man-height);
     border-radius: 0.4em;
-    background-color: white;
+    background-color: var(--surface_bg);
     box-shadow: 0 3px 14px hsla(0, 0%, 0%, 20%);
 
     overflow: auto;

@@ -96,7 +96,7 @@
 
     &.disabled {
       cursor: default;
-      color: hsl(0 0% 70%);
+      color: var(--text_disabled);
     }
   }
 
@@ -114,8 +114,8 @@
     border-radius: 100%;
     margin: 0;
 
-    border: hsl(0 0% 60%) 1px solid;
-    background-color: white;
+    border: var(--line_color_black) 1px solid;
+    background-color: var(--surface_bg);
 
     cursor: pointer;
 
@@ -126,7 +126,7 @@
       border-color: var(--main_color);
 
       .disabled & {
-        border-color: hsl(0 0% 70%);
+        border-color: var(--line_color_gray);
       }
     }
 
@@ -154,7 +154,7 @@
       transition: all 0.1s ease-out;
 
       .disabled & {
-        background-color: hsl(0 0% 70%);
+        background-color: var(--tt_color_light-gray);
       }
     }
   }

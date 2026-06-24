@@ -58,7 +58,8 @@
 
 <style lang="postcss">
   .root {
-    @apply w-full rounded-md flex items-center justify-between bg-white;
+    @apply w-full rounded-md flex items-center justify-between;
+    background-color: var(--surface_bg);
     height: var(--one-line-input-height);
     padding: 0 0.7em;
     border: var(--tt_color_light-gray) 1px solid;
@@ -66,7 +67,7 @@
 
     &.disabled {
       @apply cursor-default;
-      background-color: hsla(0, 0%, 0%, 4%);
+      background-color: var(--surface_bg_disabled);
     }
   }
 
